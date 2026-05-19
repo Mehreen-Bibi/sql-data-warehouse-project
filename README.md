@@ -5,7 +5,7 @@ Welcome to the **Data Warehouse & Analytics Project** repository. 🚀
 This project showcases an end-to-end data warehousing and analytics solution, covering the complete workflow from data integration and transformation to analytical reporting and business insights.
 
 The repository is designed as a professional portfolio project that demonstrates practical skills in:
-
+/
 - Data Warehousing
 - ETL Pipeline Development
 - SQL Server Development
@@ -43,6 +43,49 @@ This repository is designed for professionals and students aiming to showcase ex
 - SQL Development  
 - Data Architecture  
 - Data Engineering  
-- ETL Pipeline Development  
+- ETL Pipeline Development
 - Data Modeling  
-- Data Analytics  
+- Data Analytics 
+
+## 🚀 Project Requirements
+
+This project is divided into two key areas: **Data Engineering (Data Warehouse Development)** and **Data Analytics (BI & Reporting)**.
+
+---
+
+## 🏗️ Building the Data Warehouse (Data Engineering)
+
+### 🎯 Objective
+Develop a modern data warehouse using **SQL Server** to consolidate sales data and enable efficient analytical reporting for data-driven decision-making.
+
+### ⚙️ Specifications
+
+- **Data Sources**  
+  Import data from two source systems (**ERP and CRM**) provided in CSV format.
+
+- **Data Quality**  
+  Cleanse, validate, and resolve data quality issues before performing any analysis.
+
+- **Data Integration**  
+  Combine both sources into a unified, analytics-ready data model optimized for reporting and querying.
+
+- **Scope**  
+  Focus on the most recent dataset only. Historical data tracking (data historization) is not included.
+
+- **Documentation**  
+  Provide clear and structured documentation of the data model to support both business stakeholders and analytics teams.
+
+---
+
+## 📊 BI & Analytics (Data Analysis)
+
+### 🎯 Objective
+Develop SQL-based analytics to generate meaningful business insights.
+
+### 📈 Focus Areas
+
+- Customer Behavior Analysis  
+- Product Performance Evaluation  
+- Sales Trend Analysis  
+
+These insights empower stakeholders with key business metrics, enabling informed strategic decision-making.
