@@ -5,7 +5,7 @@ Welcome to the **Data Warehouse & Analytics Project** repository. 🚀
 This project showcases an end-to-end data warehousing and analytics solution, covering the complete workflow from data integration and transformation to analytical reporting and business insights.
 
 The repository is designed as a professional portfolio project that demonstrates practical skills in:
-/
+
 - Data Warehousing
 - ETL Pipeline Development
 - SQL Server Development
@@ -16,6 +16,7 @@ The repository is designed as a professional portfolio project that demonstrates
 
 The project follows industry-standard practices in data engineering and analytics to build scalable, reliable, and insight-driven data solutions.
 
+---
 ## 📖 Project Overview
 
 This project demonstrates an end-to-end modern data engineering solution, covering the full lifecycle from raw data ingestion to analytics-ready reporting.
