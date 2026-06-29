@@ -1,40 +1,39 @@
 /*
-==============================
-Create Database and Schemas
-==============================
-Script purpose:
-	This script create a new database name 'DataWarehouse' after checking if it is already exists.
-	If the database exists, it is dropped and recreated. Additionally, the script sets up three schemas
-	within the database: 'bronze', 'silver', 'gold'.
-
-WARNINGS:
-	Running this script will drop the entire 'Datawarehouse' database if it exists.
-	All data in the database will be permanently deleted. Proceed with caution
-	and ensure you have proper backups before running this script.
+============================================================================
+CREATE DATABASE & SCHEMA SETUP
+============================================================================
+Purpose  : Create the DataWarehouse database and its three schemas.
+WARNING  : This drops and recreates the entire DataWarehouse database.
+            ALL existing data will be permanently lost.
+            Ensure backups exist before running this section.
+============================================================================
 */
-Use master;
+
+USE master;
 GO
 
--- Drop and recreate the 'DataWarehouse' database.
+-- Drop the existing DataWarehouse database (if present) and recreate it cleanly
 IF EXISTS (SELECT 1 FROM sys.databases WHERE name = 'DataWarehouse')
 BEGIN
-	ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
-	DROP DATABASE DataWarehouse;
+	
+    ALTER DATABASE DataWarehouse SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE DataWarehouse;
+
 END;
 GO
 
--- Create the 'DataWarehouse' database
 CREATE DATABASE DataWarehouse;
 GO
 
 USE DataWarehouse;
 GO
 
--- Create Schemas
-CREATE SCHEMA bronze;
+-- Create the three Medallion Architecture schemas
+CREATE SCHEMA bronze; -- Raw data ingested directly from source systems
 GO
-
-CREATE SCHEMA silver;
+	
+CREATE SCHEMA silver; -- Cleansed, transformed, and enriched data
 GO
-
-CREATE SCHEMA gold;
+	
+CREATE SCHEMA gold;   -- Business-ready views (Star Schema for analytics)
+GO
